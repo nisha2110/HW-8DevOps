@@ -49,4 +49,8 @@ jobs:
           push: true
           tags: nishi2110/hw-8devops_demo:latest
 
-          # Add other relevant build parameters here
+      - name: Run tests
+        run: |  
+          docker run nishi2110/hw-8devops pytest  
+
+        # Add other relevant build parameters here
