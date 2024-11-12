@@ -20,7 +20,7 @@
 ## Use the following command to run tests inside the Docker container:
    - docker run  hw-8devops pytest
 ## DockerHub Account image:
-  - Docker image link --> https://hub.docker.com/repository/docker/nishi2110/hw-8devops_demo/general
+  - Docker image link --> https://hub.docker.com/repository/docker/nishi2110/hw-8devops/general
 ## Git command:
 - git init  -->Initialize the repository:
 - git remote add origin git@github.com:nisha2110/HW-8DevOps.git --> Add the remote.
