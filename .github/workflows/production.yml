@@ -47,10 +47,14 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: nishi2110/hw-8devops_demo:latest
+          tags: nishi2110/hw-8devops:latest
 
-      - name: Run tests
-        run: |  
-          docker run hw-8devops pytest  
+      - name: Build Docker Image
+        run: |
+          docker build -t hw-8devops .
+    
+      - name: Run Tests with Pytest
+        run: |
+          docker run hw-8devops pytest 
 
         # Add other relevant build parameters here
