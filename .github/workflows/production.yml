@@ -1,4 +1,4 @@
-name: CI/CD Pipeline
+name: Python app CI/CD Pipeline
 
 on:
   push:
@@ -51,6 +51,6 @@ jobs:
 
       - name: Run tests
         run: |  
-          docker run nishi2110/hw-8devops pytest  
+          docker run hw-8devops pytest  
 
         # Add other relevant build parameters here
